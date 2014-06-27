@@ -1,0 +1,14 @@
+%h1 Listing Departments
+%table
+  %thead
+    %tr
+      %th Name
+
+    - @departments.each do |dept|
+      %tr
+        %td= dept.name   
+        %td= link_to 'Show', dept
+        %td= link_to 'Edit', edit_department_path(dept)
+        %td= link_to 'Destroy', dept, :method => :delete, :data => {:confirm => 'Are You Sure?'} 
+
+= link_to 'New Department', new_department_path
