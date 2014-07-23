@@ -35,12 +35,19 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'pry'
 gem 'rspec-activemodel-mocks'
 
+gem 'twitter-bootstrap-rails'
+gem "less-rails"
+
+
+
 group :development do
   gem 'guard'
   gem 'guard-rspec', require: false
 end
 
+
 group :development, :test do
+# for rspec
   gem 'rspec-rails', '~> 3.0.0'
 end
 

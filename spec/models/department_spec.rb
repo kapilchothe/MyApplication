@@ -11,5 +11,5 @@ describe Department do
 	context 'To ensure that a column of database are actually exists' do
 		it {should have_db_column(:name).of_type(:string)}
 	end
- 
+   
 end 

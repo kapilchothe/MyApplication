@@ -9,6 +9,10 @@ class DepartmentsController < ApplicationController
 		@department = Department.new
 	end
 
+
+	def new_dept
+	end
+		
 	def create
     @department = Department.new(department_params)
 
